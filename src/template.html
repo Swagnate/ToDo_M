@@ -1,14 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <link rel="stylesheet" href="styles/style.css">
+  <title>ToDo_M</title>
+</head>
 
-  <body>
-    <div id="root"></div>
-  </body>
+<body>
+  <div id="root">
+    <div class="navigator">
+      <div class="nav">
+        <div>Home</div>
+        <div>News</div>
+        <div>About</div>
+        <div>login</div>
+      </div>
+    </div>
+
+    <div class="todo_template">
+      <div class="date_panel">
+        <h4 class="date_label">Date :</h4>
+        <p class="mounth">January 14</p>
+      </div>
+      <div class="check_the_week">
+        <div class="checkbox">
+          <label class="custom_label" for="monday">mon</label>
+          <input type="radio" class="custom_checkbox" name="week_1" id="monday">
+        </div>
+        <div>
+          <label class="custom_label" for="tuesday">tue</label>
+          <input type="radio" class="custom_checkbox" name="week_2" id="tuesday">
+        </div>
+        <div>
+          <label class="custom_label" for="wednesday">wed</label>
+          <input type="radio" class="custom_checkbox" name="week_3" id="wednesday">
+        </div>
+        <div>
+          <label class="custom_label" for="thursday">thu</label>
+          <input type="radio" class="custom_checkbox" name="week_4" id="thursday">
+        </div>
+        <div>
+          <label class="custom_label" for="friday">fri</label>
+          <input type="radio" class="custom_checkbox" name="week_5" id="friday">
+        </div>
+        <div>
+          <label class="custom_label" for="saturday">sat</label>
+          <input type="radio" class="custom_checkbox" name="week_6" id="saturday">
+        </div>
+        <div>
+          <label class="custom_label" for="sunday">sun</label>
+          <input type="radio" class="custom_checkbox" name="week_7" id="sunday">
+        </div>
+      </div>
+
+      <div class="page_wrapper">
+        <div class="left_section">
+          <div class="daily_shedule">
+            <div class="shedule_title">Daily Shedule</div>
+            <h4>Daily Shedule</h4>
+            <div class="record">
+              <div class="time">06 am</div>
+              <div>label</div>
+            </div>
+            <div class="record">
+              <div class="time">07 am</div>
+              <div>label</div>
+            </div>
+            <div class="record">
+              <div class="time">08 am</div>
+              <div>label</div>
+            </div>
+            <div class="record">
+              <div class="time">09 am</div>
+              <div>label</div>
+            </div>
+            <div class="record">
+              <div class="time">10 am</div>
+              <div>label</div>
+            </div>
+            <div class="record">
+              <div class="time">11 am</div>
+              <div>label</div>
+            </div>
+            <div class="record">
+              <div class="time">12 pm</div>
+              <div>label</div>
+            </div>
+            <div class="record">
+              <div class="time">01 pm</div>
+              <div>label</div>
+            </div>
+            <div class="record">
+              <div class="time">02 pm</div>
+              <div>label</div>
+            </div>
+            <div class="record">
+              <div class="time">03 pm</div>
+              <div>label</div>
+            </div>
+            <div class="record">
+              <div class="time">04 pm</div>
+              <div>label</div>
+            </div>
+            <div class="record">
+              <div class="time">05 pm</div>
+              <div>label</div>
+            </div>
+            <div class="record">
+              <div class="time">06 pm</div>
+              <div>label</div>
+            </div>
+            <div class="record">
+              <div class="time">07 pm</div>
+              <div>label</div>
+            </div>
+            <div class="record">
+              <div class="time">08 pm</div>
+              <div>label</div>
+            </div>
+            <div class="record">
+              <div class="time">09 pm</div>
+              <div>label</div>
+            </div>
+            <div class="record">
+              <div class="time">10 pm</div>
+              <div>label</div>
+            </div>
+          </div>
+
+          <div class="notes">
+            <h4 class="h4">Notes</h4>
+            <div class="notes_title">Notes</div>
+            <div class="notes_content">Type</div>
+          </div>
+        </div>
+
+        <div class="right_section">
+          <div class="smile">
+            <input type="radio" class="important_checkbox" name="important" id="important">
+            <input type="radio" class="important_checkbox" name="important" id="important">
+            <input type="radio" class="important_checkbox" name="important" id="important">
+            <input type="radio" class="important_checkbox" name="important" id="important">
+            <input type="radio" class="important_checkbox" name="important" id="important">
+          </div>
+          <div class="water">
+            <label class="water_label" for="important">water</label>
+            <input type="radio" class="important_checkbox" name="important" id="important">
+            <input type="radio" class="important_checkbox" name="important" id="important">
+            <input type="radio" class="important_checkbox" name="important" id="important">
+            <input type="radio" class="important_checkbox" name="important" id="important">
+            <input type="radio" class="important_checkbox" name="important" id="important">
+            <input type="radio" class="important_checkbox" name="important" id="important">
+            <input type="radio" class="important_checkbox" name="important" id="important">
+            <input type="radio" class="important_checkbox" name="important" id="important">
+            <input type="radio" class="important_checkbox" name="important" id="important">
+          </div>
+          <div class="important">
+            <div class="important_title">Most Important</div>
+            <div class="important_row">
+              <input type="radio" class="important_checkbox" name="important" id="important">
+              <label class="important_label" for="important">Item</label>
+            </div>
+            <div class="important_row">
+              <input type="radio" class="important_checkbox" name="important" id="important">
+              <label class="important_label" for="important">Item</label>
+            </div>
+            <div class="important_row">
+              <input type="radio" class="important_checkbox" name="important" id="important">
+              <label class="important_label" for="important">Item</label>
+            </div>
+          </div>
+          <div class="important">
+            <div class="important_title">Todos</div>
+            <div class="important_row">
+              <input type="radio" class="important_checkbox" name="important" id="important">
+              <label class="important_label" for="important">Item</label>
+            </div>
+            <div class="important_row">
+              <input type="radio" class="important_checkbox" name="important" id="important">
+              <label class="important_label" for="important">Item</label>
+            </div>
+            <div class="important_row">
+              <input type="radio" class="important_checkbox" name="important" id="important">
+              <label class="important_label" for="important">Item</label>
+            </div>
+            <div class="important_row">
+              <input type="radio" class="important_checkbox" name="important" id="important">
+              <label class="important_label" for="important">Item</label>
+            </div>
+            <div class="important_row">
+              <input type="radio" class="important_checkbox" name="important" id="important">
+              <label class="important_label" for="important">Item</label>
+            </div>
+            <div class="important_row">
+              <input type="radio" class="important_checkbox" name="important" id="important">
+              <label class="important_label" for="important">Item</label>
+            </div>
+            <div class="important_row">
+              <input type="radio" class="important_checkbox" name="important" id="important">
+              <label class="important_label" for="important">Item</label>
+            </div>
+            <div class="important_row">
+              <input type="radio" class="important_checkbox" name="important" id="important">
+              <label class="important_label" for="important">Item</label>
+            </div>
+            <div class="important_row">
+              <input type="radio" class="important_checkbox" name="important" id="important">
+              <label class="important_label" for="important">Item</label>
+            </div>
+            <div class="important_row">
+              <input type="radio" class="important_checkbox" name="important" id="important">
+              <label class="important_label" for="important">Item</label>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
 </html>
